@@ -1,3 +1,25 @@
-<div id='container'>
+<div id='container' ng-controller="LinksController">
   <!-- Your html here -->
+
+  <!-- We don't have any links, so nothing is showing up -->
+  <ul>
+    <li ng-repeat="link in data.links"> 
+      <h3>{{link.url}}</h3>
+    </li>
+  </ul>
+
 </div>
+
+
+
+
+
+<!-- <div id='signin'>
+  <h1>signin</h1>
+  <form name="signinForm" ng-submit='signin()'>
+    <input type='text'ng-model='user.username'>
+    <input type="password" ng-model='user.password'>
+    <button>signin</button>
+  </form>
+  <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
+</div> -->
